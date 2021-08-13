@@ -5,4 +5,12 @@
 // primeiros testes com Jquery
 // uso do $
 
+$(function(){
+    //qualquer função
+    //será carregada antes dos elementos da página
+})
 
+$(window).load(function(){
+    //qualquer função
+    //será carregada APÓS os elementos da página carregarem por completo
+})
