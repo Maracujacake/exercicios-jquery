@@ -100,3 +100,19 @@ $(window).load(function(){
     })
 
     /*****************************************************************************************/
+
+    // para chamar ID ou CLASSE ao invés da própria tag para não alterar todas usamos
+    // para classe:
+    // $(.classe).açãoJquery
+    // para id:
+    // $(#ID).açãoJquery
+    // mesma sintaxe do css
+
+    /*****************************************************************************************/
+
+    // reset completo ou mudança completa das configurações do documento usando *
+    // assim como no css * é usado principalmente para resetar a margin e o padding
+
+    $(document).ready(function(){
+        $('*').css("color","gold")
+    })
