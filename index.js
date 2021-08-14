@@ -89,3 +89,14 @@ $(window).load(function(){
     })
 
     // função que muda a cor do fundo ao clicar no h2
+
+    /*****************************************************************************************/
+
+    // mais de um atributo css dentro da ação .css();
+    // usa=se chaves e a sintaxe do proprio css .css({color:'cor', display:'flex', font-size:'25px'})
+    
+    $(document).ready(function(){
+        $('h1').css({color:'purple', display:'block', 'font-size':'55px'})
+    })
+
+    /*****************************************************************************************/
