@@ -32,12 +32,32 @@ $(window).load(function(){
 // $('h1').hide(); ---> faz o elemento começar escondido
 // $('h2').delay(2000) ----> milisegundos
 
+/*****************************************************************************************/
 
 // testando:
     $(document).ready(function(){
         $('h1').css("color","red");
-        $('p').css("color","bold");
         $('h1').hide(3000);
         $('h2').delay(1000);
+        $('h2').hide();
+        $('h2').fadeIn("slow");
     })
 
+/*****************************************************************************************/
+
+    // $('elemento').fadeIn("tempo"); --> aparecimento do texto
+    // $('elemento').text("texto a ser mostrado a partir de agora"); --> muda o texto do elemento
+
+/*****************************************************************************************/
+
+    // encadeando funções do Jquery:
+
+    // $('elemento').função().outrafunção().outrafunçaomais()
+    // note que o elemento não muda
+
+    /*****************************************************************************************/
+
+    // testando: 
+    $(document).ready(function(){
+        $('p').css("color","red").text("abluababa").delay(2000);
+    })
