@@ -148,4 +148,15 @@ $(window).load(function(){
         })
     })
 
+    // para ficar em ambos os casos (ao atualizar e ao redimensionar) o código precisa estar fora e dentro da função resize
+
     /*****************************************************************************************/
+
+    // função fadeOut (fazer sumir)
+    // exemplo usado com imagem e scroll > ao utilizar o scroll da página a imagem sumirá
+
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            $('.imagem').fadeOut('1000')
+        })
+    })
