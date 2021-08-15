@@ -154,9 +154,24 @@ $(window).load(function(){
 
     // função fadeOut (fazer sumir)
     // exemplo usado com imagem e scroll > ao utilizar o scroll da página a imagem sumirá
-
+/*
     $(document).ready(function(){
         $(window).scroll(function(){
             $('.imagem').fadeOut('1000')
         })
     })
+*/
+    /*****************************************************************************************/
+
+    // teste para sumir a imagem a partir de certo ponto do scroll
+
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            var topo = $(window).scrollTop();
+            if(topo > 300){
+                $('.imagem').fadeOut('5000')
+            }
+        })
+    })
+
+    /*****************************************************************************************/
