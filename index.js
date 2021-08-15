@@ -136,3 +136,16 @@ $(window).load(function(){
     $(document).ready(function(){
         $('.imagem').width($(window).width()).heigth($(window).heigth());
     })
+
+    // agora digamos que voce queira que essa função seja ativada sem precisar atualizar a pagina
+
+    // use a função resize :
+    // $(window).resize(function(){})
+
+    $(document).ready(function(){
+        $(window).resize(function(){
+            $('.imagem').width($(window).width()).heigth($(window).heigth());
+        })
+    })
+
+    /*****************************************************************************************/
