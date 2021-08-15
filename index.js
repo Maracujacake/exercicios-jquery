@@ -116,3 +116,15 @@ $(window).load(function(){
     $(document).ready(function(){
         $('*').css("color","gold")
     })
+
+    /*****************************************************************************************/
+
+    // selecionando elementos filhos no jquery
+    // $('.elemento ou #elemento e nomeDoFilho')
+    // ex: $('.div span')
+
+    $(document).ready(function(){
+        $('.div1 h2').css({color:'purple', 'font-weight':'100'})
+    })
+
+    /*****************************************************************************************/
