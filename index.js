@@ -168,8 +168,11 @@ $(window).load(function(){
     $(document).ready(function(){
         $(window).scroll(function(){
             var topo = $(window).scrollTop();
-            if(topo > 300){
-                $('.imagem').fadeOut('5000')
+            if(topo > 200){
+                $('.imagem').fadeOut('5000');
+            }
+            else{
+                $('.imagem').fadeIn('5000');
             }
         })
     })
