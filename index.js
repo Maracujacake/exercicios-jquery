@@ -128,3 +128,11 @@ $(window).load(function(){
     })
 
     /*****************************************************************************************/
+
+    // resize em imagens dependendo do tamanho da tela do navegador
+    // assim como as mediaqueries fazem
+    // quase o mesmo efeito de : @media and (max-width: EXEMPLOpx){}
+
+    $(document).ready(function(){
+        $('.imagem').width($(window).width()).heigth($(window).heigth());
+    })
