@@ -178,3 +178,21 @@ $(window).load(function(){
     })
 
     /*****************************************************************************************/
+
+    // função de click, após o carregamento de todo o documento
+    
+    $(document).ready(function(){
+        $('.ex1').click(function(){
+            $(this).css("color","red")
+        })
+    })
+
+    // outra forma de fazer sem repetir o document
+
+    /*
+        $(function(){
+            $('.ex1').click(function(){
+                $(this).css("background","#c5c5c5")
+            })
+        })
+    */
