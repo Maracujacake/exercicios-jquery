@@ -234,3 +234,69 @@ $(window).load(function(){
 
 
         /*****************************************************************************************/
+
+        // função de foco nos inputs 
+        // focusin focusout
+
+        $(function(){
+            $('.inputao').focusin(function(){
+                $('.ex1').text("mudou pq dei foco")
+            })
+        })
+
+        // ao mesmo tempo que há uma função para acontecer ao tirar o foco
+
+        $(function(){
+            $('.inputao').focusout(function(){
+                $('.ex1').text("tirei o foco ai mudou dnv")
+            })
+        })
+
+        /*****************************************************************************************/
+
+        // MESMA LOGICA PARA OS SEGUINTES EFEITOS DE MOUSE:
+        // .hover(function(){})
+        // .mousedown(function(){})         // para quando o mouse está pressionado
+        // .mouseup(function(){})           // para quando o mouse é solto
+
+        /*****************************************************************************************/
+
+        // funçao para contar o numero de clicks com mouseenter
+        
+        $(function(){
+            var numeroDeCliques = 0
+            $('.botaofeliz').mouseenter(function(){
+                numeroDeCliques +=1
+                $('.ex4').text("aumentou um, estamos em: "+numeroDeCliques);
+            })
+        })
+
+        // que esteja claro que existe uma funçao chamada mouseout que fará a mesma execução, no entanto
+        // apenas quando o mouse sair do elemento
+
+        /*****************************************************************************************/
+
+        // debate sobre MOUSEOVER
+        // .mouseover(function(){})
+        // funciona como o mouseenter, porém ele CONTA nos filhos do elemento que foi especificado na funçao
+        // no caso acima, se houvesse um <span></span> dentro do .ex4, pararia de contar e ''quebraria'' a funçao
+        // no mouseover não, porém, conta +1 cada vez que voce passa dentro do span..
+        // outra função de igual uso é o MOUSELEAVE
+        //.mouseleave(function(){});
+        // executa da mesma forma porém ao retirar o mouse, cada vez que retirar é +1
+
+        /*****************************************************************************************/
+
+        // .mousemove(function(){});
+        // serve para saber, em pixels, aonde o mouse está na tela
+
+        $(function(){
+            $('.ex5').mousemove(function(move){
+                var mouseX = move.pageX;
+                var mouseY = move.pageY;
+                $(this).text("mudou sla")
+                $('.ex4').text("movimento horizontal: "+mouseX+" - movimento vertical: "+mouseY);
+            })
+        })
+
+        /*****************************************************************************************/
