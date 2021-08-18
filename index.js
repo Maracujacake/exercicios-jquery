@@ -209,3 +209,28 @@ $(window).load(function(){
     })
 
     /*****************************************************************************************/
+
+    // função de double click, clique duplo do mouse;
+    // dblclick();
+
+    $(function(){
+        $('.ex3').dblclick(function(){
+            $(this).text("MUDOU DEPOIS DE 2 CLIQUES")
+        })
+    });
+
+    // pode-se usar variáveis também
+
+    /* 
+        $(function(){
+            var ex3 = $('.ex3');
+            ex3.dblclick(function(){
+                $(this).text("texto aleatorio")
+            })
+        })
+    */
+
+        // utilizado quando há uso recorrente de uma mesma chamada para uma mesma classe ou id
+
+
+        /*****************************************************************************************/
