@@ -300,3 +300,26 @@ $(window).load(function(){
         })
 
         /*****************************************************************************************/
+
+        // placeholder com jquery para caso haja necessidade
+
+        $(function(){
+            $('.input1').each(function(){
+                var input1 = $(this).attr('title')
+                var input = $(this)
+
+                input.val(input1).css('color','#ccc')
+                .focusin(function(){
+                    input.css('color','black');
+                    if(input.val() === input1){
+                        input.val('')
+                    }
+                })
+                .focusout(function(){
+                    if(input.val == ''){
+                        input.css('color','#ccc');
+                        input.val(input1);
+                    }
+                })
+            })
+        })
