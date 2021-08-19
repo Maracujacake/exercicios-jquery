@@ -326,3 +326,5 @@ $(window).load(function(){
 
         // tudo isso pode ser substituido com a função placeholder do HTML5, era usado antigamente devido
         // a carencia de atualizações dos navegadores.
+
+        /*****************************************************************************************/
