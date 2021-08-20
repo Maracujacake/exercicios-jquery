@@ -394,3 +394,16 @@ $(window).load(function(){
       })
 
       /*****************************************************************************************/
+
+      // função toggle
+      // vai fazer algo que está em hide aparecer e algo que está em show sumir
+      // usado muito para a criação de menus onde ao clicar ele some ou aparece
+
+      $(function(){
+          var a = $('.a')
+          $('.b').click(function(){
+              a.toggle('slow')
+          })
+      })
+
+      /*****************************************************************************************/
