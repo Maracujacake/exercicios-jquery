@@ -328,3 +328,19 @@ $(window).load(function(){
         // a carencia de atualizações dos navegadores.
 
         /*****************************************************************************************/
+
+        $(function(){
+            let exemplo = $('.ev1');
+            $('.a1').focus(function(){
+                exemplo.text($(this).attr('placeholder'))
+            })
+            
+        })
+
+
+
+        // função para trocar um título ou texto de acordo com o que está sendo pedido no input
+
+        // a variável em volta de .ev1 não é necessária, podendo ser usada a sintaxe ('.ev1').text()...etc
+
+        /*****************************************************************************************/
