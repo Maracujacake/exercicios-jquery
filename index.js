@@ -357,6 +357,40 @@ $(window).load(function(){
       })
 
       // NÃO ESQUECER DA $(FUNCTION(){}) ANTES
+      // o tempo, ao invés de milisegundos pode ser dado em noções:
+      // como ('fast'), ou ('slow')
 
+      /*****************************************************************************************/
+
+      // função show
+      // inverso do hide, para mostrar algo ao clicar
+
+      $(function(){
+          var a = $('.a')
+          $('.b').click(function(){
+              a.hide(1000)
+          })
+
+      })
+
+      $(function(){
+          var a = $('.a')
+        $('.b').click(function(){
+            a.show(1000)
+        })
+      })
+
+      // ou na mesma função
+
+      $(function(){
+          var a = $('.a')
+          $('.b').click(function(){
+              a.hide(1200)
+          })
+
+          $('.b').click(function(){
+              a.show(800)
+          })
+      })
 
       /*****************************************************************************************/
