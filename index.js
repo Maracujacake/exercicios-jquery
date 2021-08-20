@@ -344,3 +344,19 @@ $(window).load(function(){
         // a variável em volta de .ev1 não é necessária, podendo ser usada a sintaxe ('.ev1').text()...etc
 
         /*****************************************************************************************/
+
+        // função hide para esconder objetos ou textos;
+        // $('classe').hide(tempo em milisegundos);
+        // ex: usado ao clicar
+
+      $(function(){
+          var a = $('.a')
+          $('.b').click(function(){
+              a.hide(2000)
+          })
+      })
+
+      // NÃO ESQUECER DA $(FUNCTION(){}) ANTES
+
+
+      /*****************************************************************************************/
