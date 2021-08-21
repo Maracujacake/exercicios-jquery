@@ -440,3 +440,6 @@ $(window).load(function(){
       //$(function(){$(elemento).click(function(){$(elemento).fadeToggle(tempo,opacidade)})})
 
       /*****************************************************************************************/
+
+      // exercicio para manter o menu fixo no topo foi ignorado devido ao uso do bootstrap
+      // torna o (window).scroll que vimos la no inicio meio..inutil
