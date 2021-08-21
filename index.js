@@ -421,3 +421,16 @@ $(window).load(function(){
       })
 
       /*****************************************************************************************/
+
+      // efeito de fadeTo
+      // desvanece o elemento até certa opacidade
+
+      $(function(){
+          $('.xubs2').click(function(){
+              $(this).fadeTo(1000,0.5)
+          })
+      })
+
+      // fadeTo(tempo, opacidade)
+
+      /*****************************************************************************************/
