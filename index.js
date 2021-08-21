@@ -434,3 +434,9 @@ $(window).load(function(){
       // fadeTo(tempo, opacidade)
 
       /*****************************************************************************************/
+
+      // fadeToggle segue a mesma lógica acima, contanto, ao clicar novamente o elemento vai reaparecer
+
+      //$(function(){$(elemento).click(function(){$(elemento).fadeToggle(tempo,opacidade)})})
+
+      /*****************************************************************************************/
