@@ -407,3 +407,17 @@ $(window).load(function(){
       })
 
       /*****************************************************************************************/
+
+      // efeito de fadeOut e fadeIn
+      // desaparecer e aparecer
+
+      $(function(){
+          $('.xubs').click(function(){
+            $(this).fadeOut(1000)
+          })
+          $('.xubs2').dblclick(function(){
+              $('.xubs').fadeIn(1000)
+          })
+      })
+
+      /*****************************************************************************************/
